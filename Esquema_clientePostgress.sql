@@ -4,7 +4,7 @@ create table Rol (
 );
 
 create table customer_user(
-	passwor varchar(60),
+	password varchar(60),
 	email varchar(254) unique,
 	activated int(11) notnull,
 	lang_key varchar(6) notnull,
@@ -19,5 +19,18 @@ create table user_aurhority (
 );
 
 create table cliente (
-	
+	numero_documento varchar (50),
+	primer_nombre varchar (50),
+	segundo_nombre varchar (50),
+	primer_apellido varchar (50),
+	segundo_apelido varchar (50),
+	sigla varchar (10),
+	login varchar (50)
 );
+
+create table tipo_documento (
+	sigla varchar (10),
+	nombre_documento varchar (100),
+	estado varchar (40),
+);
+
